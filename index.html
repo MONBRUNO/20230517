@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Green복지재단</title>
+    <link rel="stylesheet" href="./css/common.css">
+    <script src="./script/jquery-1.12.4.js"></script>
+    <script src="./script/common.js"></script>
+</head>
+<body>
+    <div class="wrap">
+        <div class="header">
+            <div class="logo"><a href="#"><img src="./images/logo.png" alt="Green복지재단 로고 이미지"></a></div>
+            <ul class="gnb">
+                <li>
+                    <a href="#">재단소개</a>
+                    <ul>
+                        <li><a href="#">설립취지</a></li>
+                        <li><a href="#">연혁</a></li>
+                        <li><a href="#">찾아오시는길</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">후원하기</a>
+                    <ul>
+                        <li><a href="#">국내후원</a></li>
+                        <li><a href="#">국외후원</a></li>
+                        <li><a href="#">맞춤후원</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">자료실</a>
+                    <ul>
+                        <li><a href="#">서식자료실</a></li>
+                        <li><a href="#">사진자료실</a></li>
+                        <li><a href="#">후원양식</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">스토리</a>
+                    <ul>
+                        <li><a href="#">웹진</a></li>
+                        <li><a href="#">보고서</a></li>
+                        <li><a href="#">나의 후원</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="slider">
+            <div class="slide">
+                <div><a href="#"><img src="./images/slide1.jpg" alt="슬라이드 이미지1"></a></div>
+                <div><a href="#"><img src="./images/slide2.jpg" alt="슬라이드 이미지2"></a></div>
+                <div><a href="#"><img src="./images/slide3.jpg" alt="슬라이드 이미지3"></a></div>
+            </div>
+        </div>
+        <div class="contents">
+            <div class="notice">
+                <h2>공지사항</h2>
+                <ul>
+                    <li><a href="#">이런 피어나듯이 아이들의 하나 우는 거외다. 이름을 사랑과 소녀들의 아무 까닭이요.</a></li>
+                    <li><a href="#">별에도 둘 마디씩 까닭입니다.</a></li>
+                    <li><a href="#">걱정도 부끄러운 딴은 때 이런 봅니다. 가을로 다하지 한 이네들은 버리었습니다. 봄이 사랑과 이름과.</a></li>
+                    <li><a href="#">지나고 새겨지는 자랑처럼 하나에 그리워 별 계집애들의 이름과 있습니다.</a></li>
+                </ul>
+            </div>
+            <div class="gallery">
+                <h2>갤러리</h2>
+                <ul>
+                    <li><a href="#"><img src="./images/gallery1.jpg" alt="갤러리 이미지1"></a></li>
+                    <li><a href="#"><img src="./images/gallery2.jpg" alt="갤러리 이미지2"></a></li>
+                    <li><a href="#"><img src="./images/gallery3.jpg" alt="갤러리 이미지3"></a></li>
+                </ul>
+            </div>
+            <div class="banner"><a href="#"><img src="./images/banner.jpg" alt="배너이미지"></a></div>
+        </div>
+        <div class="footer">
+            <div class="f_logo"><img src="./images/f_logo.png" alt="하단 로고"></div>
+            <p>(c) The legal right od the owner of intellectual property.</p>
+            <div class="site">
+                <ul>
+                    <li><a href="#">Yellow 후원</a></li>
+                    <li><a href="#">Blue 기관</a></li>
+                    <li><a href="#">Red 복지재단</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="modal">
+        <h2>라이너 애기 당신은 잠, 별을 계십니다.</h2>
+        <p>불러 풀이 쓸쓸함과 아스라히 나는 잠, 소학교 오면 이웃 있습니다. 벌써 다하지 하나에 나는 가슴속에 있습니다. 어머님, 자랑처럼 써 불러 계십니다. 별 당신은 잔디가 노루, 같이 계절이 이름자를 아직 봅니다. 때 그리워 하나에 헤는 노루, 했던 다하지 이름과, 애기 봅니다. 말 별빛이 가을로 사랑과 어머니, 비둘기, 우는 거외다. 하나에 나의 별 마리아 하나에 애기 봅니다. 무엇인지 잠, 별 하나에 경, 봅니다. 어머니 않은 가득 가을 겨울이 하나에 청춘이 하나의 이름을 봅니다.</p>
+        <a href="#" class="close">닫기</a>
+    </div>
+    <script>
+        // 메뉴
+        $('.gnb').hover(
+            function(){
+                $('.gnb ul').stop().slideDown()
+                $('.gnb').addClass('active')
+            },
+            function(){
+                $('.gnb ul').stop().slideUp()
+                $('.gnb').removeClass('active')
+            }
+        )
+        
+        $('.notice li:first').click
+
+    </script>
+</body>
+</html>
