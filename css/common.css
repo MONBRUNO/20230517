@@ -98,17 +98,21 @@ body {
     height: 300px;
     position: relative;
     overflow: hidden;
+    width: 1200px;
 }
 
 .slide {
     position: absolute;
     top: 0;
     left: 0;
+    width: 100%;
     display: flex;
 }
 
 .slide img {
     display: block;
+    width: 1200px;
+    height: 100%;
 }
 
 .contents {
@@ -142,6 +146,10 @@ body {
     overflow: hidden;
     text-overflow: ellipsis;
     padding: 5px;
+}
+
+.notice ul li:hover a {
+    text-decoration: underline;
 }
 
 .gallery {
@@ -219,6 +227,11 @@ body {
     transform: translate(-50%, -50%);
     background-color: #fff;
     padding: 50px;
+    display: none;
+}
+
+#modal.active {
+    display: block;
 }
 
 #modal h2 {

@@ -98,14 +98,27 @@
             function(){
                 $('.gnb ul').stop().slideDown()
                 $('.gnb').addClass('active')
-            },
-            function(){
+            }, function(){
                 $('.gnb ul').stop().slideUp()
                 $('.gnb').removeClass('active')
             }
         )
         
-        $('.notice li:first').click
+        //슬라이드
+        setInterval(function(){
+            $('.slide').animate({left:-1200},function(){
+                $('.slide div:first').appendTo('.slide')
+                $('.slide').css('left',0)
+            })
+        },3000)
+        
+        //모달
+        $('.notice li:first').click(function(){
+            $('#modal').addClass('active')
+        })
+        $('.close').click(function(){
+            $('#modal').removeClass('active')
+        })  
 
     </script>
 </body>
